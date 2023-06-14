@@ -1,6 +1,8 @@
 # my_learning_teq_reactJS
 #  কম্পোনেন্ট এবং প্রপস
 
+## প্রপস : এটা সাধারনত ডায়নাম্যাকালি ভ্যারিয়াবলের ইনপুটের কাজে ব্যবহত হয়।
+
 এইটা হল ‍app.js এর রুট সেকসন। সর্বপ্রথম এখানে কাজ শুরু করতে হয়।
 ```
 import React from 'react';
@@ -24,3 +26,33 @@ import React, { Component } from "react";
 ```
 export default Classprops;
 ```
+
+কম্পেনেন্ট 2 প্রকার। 1. ক্লাস কম্পোনেন্ট 2. ফাংশনাল কম্পোনেন্ট
+1. ক্লাস কম্পোনেন্ট : এটা this কিওয়ার্ড ব্যবহৃত হয়। এটা ফাংশন ডিক্লারশন export class Classprops extends Component দিতে হয়। এটার স্ট্রাকচার হল
+```
+import React, { Component } from "react";
+export class Classprops extends Component {
+    render(){
+        return(
+            <div>
+                <h1>Hello, {this.props.name} from {this.props.place} | This is class props </h1>
+                <p>{ this.props.children }</p>
+            </div>
+        )
+    }
+}
+```
+2. ফাংশন কম্পোনেন্ট : এখেত্রে this কিওয়ার্ড ব্যবহত হয় না এবং render ফাংশন ব্যবহৃত হয় না। এটার স্ট্রাকচার হল -
+```
+import React from 'react';
+function Functionprops(props){
+    return(
+        <div>
+            <h3>This is Function Component</h3>
+            <h3>Hello {props.name} from {props.place}, I am Function</h3>
+        </div>
+    )
+}
+```
+
+
