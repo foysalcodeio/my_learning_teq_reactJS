@@ -55,4 +55,33 @@ function Functionprops(props){
 }
 ```
 
+# উচ্চতর ডিক্লারাশন
+নিচের ফাংশনটা সাধারন props ডিক্লারেশন করা হয়েছে। যদি আমরা চাই 2য় কোডটা র্কালি ব্র্যাকেট ব্যবহার এ্যাডভান্স করতে পারি
+```
+function Product(props) {
+    return (
+        <div>
+            <h1>List : </h1>
+            <p>Name : {props.name}</p>
+            <p>Description : {props.description}</p>
+            <p>Price : {props.price}</p>
+        </div>
+    )
+}
+```
+পার্ট-2
+```
+function Product({name, description, price}) { 
+    return (
+        <div>
+            <h1>List : </h1>
+            <p>Name : {name}</p>
+            <p>Description : {description}</p>
+            <p>Price : {price}</p>
+        </div>
+    )
+}
+```
+
+
 
