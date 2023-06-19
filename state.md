@@ -1,6 +1,9 @@
 # my_learning_teq_reactJS
 state : change the anykind of situation
 স্টেট হলো কোন কিছুর অবস্থা পরিবর্তন করা।
+কোথায় ব্যবহৃত হয় ? 
+যে কোন ডাটা অথবা ডিজিট বাড়ানো অথবা কমানো জন্য স্টেট ব্যবহৃত হয়। যদি আমরা উদাহরন হিসাবে একটা ওয়েব-এ্যাপ্লিকেশন এর ‍শপিং চার্টকে ধরে নিতে পারি।
+
 
  - প্রথমে আমাদের import React, {useState} from 'react' ডাটা ইম্পোর্ট করতে হবে।
  - useState() হলো একটা কন্ডিশন
@@ -50,4 +53,5 @@ state : change the anykind of situation
   )
 }
  ```
+ 
 
