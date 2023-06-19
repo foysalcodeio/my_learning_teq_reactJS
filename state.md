@@ -53,5 +53,43 @@ state : change the anykind of situation
   )
 }
  ```
+স্টেপ - 3
+ডাটা বাড়ানো এবং কমানো
+ ```
+ function Counter(){
+  const [count, SetCount] = useState(0);
+  const handleIncrease = () => {
+    const NewCount = count + 1
+    SetCount(NewCount);
+  };
+  const handleDescrease = () => {
+    const newCount = count - 1
+    SetCount(newCount)
+  }
+
+  return(
+    <div>
+      <h2>Counter : {count}</h2>
+      <button onClick = { handleIncrease} >increase</button>
+      <button onClick = { handleDescrease } >Des-crease</button>
+    </div>
+  )
+ ```
+ সর্টকাট করা যায় এভাবে
+ ```
+ function Counter(){
+  const [count, SetCount] = useState(0);
+  const handleIncrease = () =>  SetCount(count + 1);
+  return(
+    <div>
+      <h2>Counter : {count}</h2>
+      <button onMouseMove = { () => SetCount(count + 1) } >Increase</button>
+      <button onClick = { () => SetCount(count - 1) } >Des-crease</button>
+    </div>
+  )
+}
+```
+ 
+
  
 
