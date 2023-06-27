@@ -10,6 +10,23 @@ state : change the anykind of situation
  - [স্টেটের নাম, সেট ফাংশন ], [count, SetCount]
  - মানে কাউন্ট এর মান হচ্ছে useState(10);
  - setCount মানে উদাহরনসরুপ একটা জারের মত। যার মধ্যে ডাটা অথবা ভ্যালু রাখা হয়
+
+সিম্পল উদাহরন-1
+```
+function FavoriteColor() {
+  const [color, setColor] = useState("red");
+  return (
+    <>
+      <h1>My favorite color is {color}!</h1>
+      <button
+        type="button"
+        onClick={() => setColor("blue")}
+      >Blue</button>
+    </>
+  )
+}
+```
+ভিন্ন ভাবে যদি চিন্তা করি তাহলে অনেকটা এইরকম হয় - color = red [setcolor]
  
  সিম্পল ‍state কোড
  ```
@@ -89,7 +106,8 @@ state : change the anykind of situation
   )
 }
 ```
- 
+#UseEffect
+এটা অনেকটা সাইড ইফেক্ট এর মত। মাঝে মধ্যে কাজ করার সময় এক্সটারনার কিছু ডিপেন্ডেন্সি উপর নির্ভর করতে হয়। যেমন সার্ভরের ডাটা। এটা জাভাস্ক্রিপ্টের ডিপেন্ট না থেকে র্সাভার মধ্যে ডিপেন্ট থাকে।
 
- 
+
 
