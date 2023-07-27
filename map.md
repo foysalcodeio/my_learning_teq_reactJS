@@ -41,3 +41,37 @@ const It_product = [ {name: 'Photoshop', year: 1}, {name: 'Illustrator', year: 1
     )
   }
 ```
+Api calling using map
+```
+function App() {
+  return (
+    <div className="App">
+      <MovieCounter></MovieCounter>
+      <header className="App-header">
+      </header>
+    </div>
+  );
+}
+
+function MovieCounter(){
+
+  const[users, setUser] = useState([]);
+
+  useEffect(()=>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res=>res.json())
+    .then(data => setUser(data))
+  }, [])
+
+  return (
+    <div className='App'>
+    
+    information : 
+    {
+        users.map(info => <li> id : {info.id} <br></br> name : {info.name}</li>)
+    }
+  
+    </div>
+    )
+  }
+```
