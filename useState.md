@@ -22,6 +22,39 @@ function FavoriteColor() {
   )
 }
 ```
+useState() নিয়ে বেসিক কনসেপ্ট 
+```
+function MovieCounter(){
+  
+  // const res = useState(5) 
+  // console.log(res)       
+
+  //step - 1
+  // const result = ['abc', 'def']
+  // console.log([result[0], result[1]])
+
+  //step - 2 if I used distructure
+  //const [first, second] = ['abc', 'def']
+  //console.log(first, second)
+
+  // const [first, second] = useState(0)
+  // console.log(first, second)
+
+  const [count, setCount] = useState(5) // first : set, second: update
+  console.log(count, setCount)
+
+
+  
+  return (
+    <div>
+      <button>Add Movie</button>
+      <h3>number of movie : </h3>
+    </div>
+  )
+}
+
+```
+
 ভিন্ন ভাবে যদি চিন্তা করি তাহলে অনেকটা এইরকম হয় - color = red [setcolor]
  
  সিম্পল ‍state কোড
