@@ -38,6 +38,7 @@ function MovieCounter(){
   //console.log(first, second)
 
   // const [first, second] = useState(0)
+  // const [initialization, declare/set_data] = variable property
   // console.log(first, second)
 
   const [count, setCount] = useState(5) // first : set, second: update
