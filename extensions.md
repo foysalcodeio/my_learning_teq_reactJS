@@ -1,3 +1,4 @@
+# vscode extension need for front-end developer's
 1. react extension pack
 2. auto import
 3. file - preference - search on emmit - sitting on json and then
